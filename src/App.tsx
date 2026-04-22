@@ -48,6 +48,7 @@ const App = () => {
           area="aside"
           display={{ base: 'none', lg: 'block' }}
           paddingX={5}
+          overflow="hidden"
         >
           <GenreList
             selectedGenre={gameQuery.genre}
