@@ -7,11 +7,18 @@ import '@fontsource/inter/700.css';
 import { Provider } from './components/ui/provider';
 import App from './App';
 import './index.css';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Provider defaultTheme="dark">
-      <App />
-    </Provider>
+    <QueryClientProvider client={queryClient}>
+      <Provider defaultTheme="dark">
+        <App />
+      </Provider>
+      <ReactQueryDevtools />
+    </QueryClientProvider>
   </React.StrictMode>,
 );
