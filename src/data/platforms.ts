@@ -1,5 +1,8 @@
-export default
-    [
+export default {
+    "count": 14,
+    "next": null,
+    "previous": null,
+    "results": [
         {
             "id": 1,
             "name": "PC",
@@ -9,8 +12,8 @@ export default
                     "id": 4,
                     "name": "PC",
                     "slug": "pc",
-                    "games_count": 560911,
-                    "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg",
+                    "games_count": 560916,
+                    "image_background": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
                     "image": null,
                     "year_start": null,
                     "year_end": null
@@ -26,8 +29,8 @@ export default
                     "id": 187,
                     "name": "PlayStation 5",
                     "slug": "playstation5",
-                    "games_count": 1475,
-                    "image_background": "https://media.rawg.io/media/games/3ea/3ea3c9bbd940b6cb7f2139e42d3d443f.jpg",
+                    "games_count": 1476,
+                    "image_background": "https://media.rawg.io/media/games/b29/b294fdd866dcdb643e7bab370a552855.jpg",
                     "image": null,
                     "year_start": 2020,
                     "year_end": null
@@ -113,8 +116,8 @@ export default
                     "id": 186,
                     "name": "Xbox Series S/X",
                     "slug": "xbox-series-x",
-                    "games_count": 1247,
-                    "image_background": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+                    "games_count": 1248,
+                    "image_background": "https://media.rawg.io/media/games/840/8408ad3811289a6a5830cae60fb0b62a.jpg",
                     "image": null,
                     "year_start": 2020,
                     "year_end": null
@@ -609,3 +612,4 @@ export default
             ]
         }
     ]
+}
