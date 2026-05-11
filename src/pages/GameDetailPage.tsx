@@ -1,6 +1,16 @@
 import { NavLink, useParams } from 'react-router-dom';
 import useGame from '../hooks/useGame';
-import { Box, Heading, Link, Spinner, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Heading,
+  Link,
+  Span,
+  Spinner,
+  Text,
+} from '@chakra-ui/react';
+import { useState } from 'react';
+import ExpandableText from '../components/ExpandableText';
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -12,7 +22,7 @@ const GameDetailPage = () => {
     <>
       <NavLink to="/">Home</NavLink>
       <Heading paddingY={5}>{game.name}</Heading>
-      <Text>{game.description_raw}</Text>
+      <ExpandableText>{game.description_raw}</ExpandableText>
     </>
   );
 };
